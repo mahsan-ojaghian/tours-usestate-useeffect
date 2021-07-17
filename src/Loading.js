@@ -5,7 +5,7 @@ const Loading = () => {
     <div className="loading">
       
 
-<div class="loading">Loading&#8230;</div>
+<div className="loading">Loading&#8230;</div>
 
 
     </div>
