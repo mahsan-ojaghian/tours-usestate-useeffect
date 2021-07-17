@@ -21,7 +21,7 @@ function App() {
       const response = await fetch(url)
       const tours = await response.json()
       setLoading(false)
-      setTours(tours)
+      setTours(tours);
     }
     //if fetching data faces with errors.(error handling)
      catch (error) {
