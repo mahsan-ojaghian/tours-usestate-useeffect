@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import  './styles.css';
 
 const Tour = ({ id, image, info, name, price, removeTour }) => {
   const [readMore, setReadMore] = useState(false);
@@ -12,7 +13,7 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
         </div>
         <p>
           {readMore ? info : `${info.substring(0, 200)}...`}
-          <button onClick={() => setReadMore(!readMore)}>
+          <button onClick={() => setReadMore(!readMore)} className="btn-readMore">
             {readMore ? 'show less' : '  read more'}
           </button>
         </p>
